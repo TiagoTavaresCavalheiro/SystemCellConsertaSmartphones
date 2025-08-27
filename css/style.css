@@ -225,12 +225,14 @@ input[type="text"] {
   
   #menu {
     margin-right: 1em;
-    margin-right: 1em;
+    margin-left: 1em;
     text-align: center;
   }
    #menu h1{
     font-size: 60px;
     text-align: center;
+    margin-right: 1em;
+    margin-left: 0.7em;
   }
   
   #content {
@@ -274,4 +276,5 @@ input[type="text"] {
    font-weight: bolder;
    margin: 0;
    width: 100%;
+
  }
