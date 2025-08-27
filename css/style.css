@@ -232,7 +232,7 @@ input[type="text"] {
     font-size: 60px;
     text-align: center;
     margin-right: 1em;
-    margin-left: 0.7em;
+    margin-left: 1em;
   }
   
   #content {
@@ -278,3 +278,4 @@ input[type="text"] {
    width: 100%;
 
  }
+
