@@ -1,0 +1,277 @@
+*{
+    margin: 0; /* Limpa formatações margem internas e externas*/
+    padding: 0;
+ }
+
+ body{
+   font-size: 16px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   background-color: #c4c4c4;
+   margin: 0;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #header{
+    display: flex;
+    background-color: #12123d;
+    text-align: center;
+ }
+
+  h1{
+   color:#252525;
+   font-size: 40px;
+   text-align: center;
+ }
+ 
+  h2{
+   color:#252525;
+   font-size: 40px;
+   text-align: center;
+ }
+
+/* Definição de posição do logo */
+ #logo{
+    margin-left: 30px;
+    margin-right: 20px;
+ }
+
+/* Definição de tamanho do logo */
+ #logo img {
+  width: 250px; /* largura do logo */
+ }
+
+#menu{
+    font-size:45px; /* tamanho da fonte do menu */
+    margin: auto; /* espaçamento à direita do menu */ 
+    text-align: center; /* alinhamento do texto ao centro*/
+ }
+ 
+ #menu h1 {
+  font-size: 100px; /* aumenta o tamanho da fonte de "SystemCell Conserta" */
+  color: #f2f3f7; /*cor do texto*/
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center; 
+}
+
+ #menu a {
+  color: #fff; /* cor do texto do menu */
+  text-decoration: none; /* remove o sublinhado do link */
+  margin: 0 20px; /* espaçamento entre os links */
+}
+
+ #header a:link, #header a:visited{
+    color: #FFFFFF;
+    padding: 8px 12px;
+ }
+
+ #header a:hover{
+    color:#0066cc;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+    text-decoration:none;
+ }
+ 
+ .white{
+    color:#29487d;
+ }
+ 
+ #content {
+  max-width: 1280px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+ #content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#content li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#content label {
+  display: inline-block;
+  width: 180px;
+  text-align: left;
+}
+#content ul li:last-child {
+  margin-top: 10px; /* ajuste o valor para a distância desejada */
+}
+#label[for="mensagem"] {
+  vertical-align: top;
+}
+
+#content input[type="text"] {
+  display: inline-block;
+  width: 200px;
+}
+
+#posts {
+  width: 55%;
+  display: inline-block;
+ }
+
+ .post{
+    padding: 20px;
+    margin-bottom: 20px;
+    background:#f0eaea;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+ }
+ .post a{
+  font-size: 36px; /* definição de tamanho da fonte do link */
+
+ }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="text"] {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+}
+
+#redesSociais {
+  display: flex;
+  justify-content: center;
+}
+
+#redesSociais a {
+  margin: 0 10px;
+}
+
+#redesSociais img {
+  width: 150px; /* ajusta o tamanho dos logos */
+  height: 150px; /* ajusta o tamanho dos logos */
+}
+
+ .img-post{
+   width: 100%;
+   height: 100%;
+ }
+
+ #right-side{
+    width: 42%;
+    float: right;
+    margin: auto;
+ }
+ #right-side h2{
+  font-size: 42px;
+  text-align: left; 
+ }
+
+ .content-right{
+    background: #FFFFFF;
+    padding: 30px;
+    margin-bottom: 20px;
+    
+ }
+ .content-right h3{
+    font-size: 42px;
+ }
+ .content-right a{
+  font-size: 30px; /*tamanho do texto dos links curiosidade*/
+ }
+
+ .post-right{
+    font-size: 25px;
+    padding: 5px;
+    border-bottom: 1px solid #cccccc;
+    margin-left: 5px;
+ }
+/* Retira os sublinhados */
+ a{
+   text-decoration: none;
+ }
+
+ /* Cores dos links */
+ a:link{
+   color:#111064
+ }
+
+ /* Formatação icone depois de visitado */
+ a:visited{
+  color: red;
+ }
+
+ /* Formatação ao passar mause sobre icone */
+ a:hover{
+   text-decoration: underline;
+ }
+
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #body{
+    margin: 0;
+  }
+  
+  #logo {
+    margin: 0;
+  }
+  
+  #menu {
+    margin-right: 1em;
+    margin-right: 1em;
+    text-align: center;
+  }
+   #menu h1{
+    font-size: 60px;
+    text-align: center;
+  }
+  
+  #content {
+    flex-direction: column;
+  }
+  
+  #posts {
+    width: 100%;
+  }
+
+  .post iframe{
+    width: 13em;
+    height: auto;
+  }
+  
+  #mensagem {
+    width: 25.5em;
+    height: auto;
+  }
+  #right-side {
+    width: 100%;
+    float: none;
+  }
+  #redesSociais img{
+    width: 3em;
+    height: auto;
+  }
+  .content-right {
+    margin-bottom: 20px;
+  }
+}
+
+/*Formatação rodape */
+ #footer{
+   clear:both;
+   text-align: center;
+   padding: 15px;
+   background: #12123d;
+   color:#FFFFFF;
+   font-size: 25px;
+   font-weight: bolder;
+   margin: 0;
+   width: 100%;
+ }
