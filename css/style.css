@@ -224,8 +224,7 @@ input[type="text"] {
   }
   
   #menu {
-    margin-right: 1em;
-    margin-left: 1em;
+    margin:0;
     text-align: center;
   }
    #menu h1{
@@ -276,5 +275,6 @@ input[type="text"] {
    width: 100%;
 
  }
+
 
 
